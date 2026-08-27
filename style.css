@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("../vazir-font-v27.2.2-Fontjo.com/Vazir.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Vazir";
+  src: url("../vazir-font-v27.2.2-Fontjo.com/Vazir-Light.woff2")
+    format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Vazir";
+  src: url("../vazir-font-v27.2.2-Fontjo.com/Vazir-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Vazir";
+  src: url("../vazir-font-v27.2.2-Fontjo.com/Vazir-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Vazir";
+  src: url("../vazir-font-v27.2.2-Fontjo.com/Vazir-Black.woff2")
+    format("woff2");
+  font-weight: 900;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primery-color:#fff;
+    --blue:#008cff;
+    --gray-color:#8992a7;
+    --border: rgba(255, 255, 255, 0.08);
+}
+body{
+    height: 100vh;
+    background-color:#100f0f;
+    font-family: "Vazir", sans-serif;
+}
+
+/*Start Contact Section*/
+.container{
+    max-width: 1150px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    padding: 20px;
+}
+.contact-us{
+    max-width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding:20px  40px;
+    border: 1px solid rgba(0, 140, 255, 0.15);
+    border-radius: 25px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+.title h1{
+    color: var(--primery-color);
+    font-size: 35px;
+}
+.title span{
+    width: 150px;
+    color: var(--blue);
+    font-size: 11px;
+}
+
+.title p{
+    color: var(--gray-color);
+}
+.contact-info{
+    width:100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.communicate,.send-message{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    direction: rtl;
+    padding:30px 20px;
+}
+.com-title{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.com-title h2{
+    color: var(--primery-color);
+    font-size: 28px;
+}
+.com-title h2>span{
+    color: var(--blue);
+}
+.com-title p{
+    color: var(--gray-color);
+}
+.com-info{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 20px;
+    border-bottom: 0.2px solid var(--border);
+    padding:0 0 20px 0;
+}
+.com-info-box{
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    color: var(--primery-color);
+    transition: all 0.4s ease-in-out;
+}
+.com-info-box:hover{
+    transform: translateX(-8px);
+    border-color: rgba(0, 140, 255, 0.35);
+    background: rgba(0, 140, 255, 0.04);
+    color: var(--primery-color);
+}
+.com-info-box:hover>a{
+    background-color: var(--blue);
+    color: var(--primery-color);
+    
+}
+.com-info-box a{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(0, 140, 255, 0.1);
+    color: var(--blue);
+    transition: all 0.4s ease-in-out;
+}
+.com-social{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--primery-color);
+}
+.com-social h2>span{
+    color: var(--blue);
+}
+.social-box{
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.social-box a{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(0, 140, 255, 0.1);
+    color: var(--blue);
+    transition: all 0.4s ease-in-out;
+}
+.social-box a:hover{
+    background-color: var(--blue);
+    color: var(--primery-color);
+    transform: scale(1.1);
+}
+.send-message form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    overflow: hidden;
+}
+.send-message form>h2{
+    color: var(--primery-color);
+    font-size: 28px;
+}
+.send-message form>h2>span{
+    color: var(--blue);
+}
+.send-message form>input{
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: var(--primery-color);
+    border: 1px solid rgba(0, 140, 255, 0.15);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+    transition: all 0.4s ease-in-out;
+}
+.send-message form>textarea{
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid rgba(0, 140, 255, 0.15);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+    color: var(--primery-color);
+    transition: all 0.4s ease-in-out;
+}
+.send-message form>input:active,.send-message form>textarea:active{
+    transform: scale(1.1);
+
+}
+.send-message form>input[type=submit]{
+    width: 200px;
+    background-color: var(--blue);
+    color: var(--primery-color);
+    outline:none;
+}
+.send-message form>input[type=submit]:hover{
+    transform: scale(0.9);
+}
+@media (min-width:850px) {
+    .communicate,.send-message{
+        width: 48%;
+    }
+}
+/*End Contact Section*/
+/*start footer*/
+footer{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    border: 1px solid rgba(0, 140, 255, 0.15);
+    border-radius: 25px;
+    padding: 40px 20px;
+    margin: 50px auto;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+}
+footer h1{
+    font-size: 40px;
+    color: var(--primery-color);
+}
+footer h1>span{
+    color: var(--blue);
+}
+.footer-text{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 20px;
+    border: 1px solid rgba(0, 140, 255, 0.15);
+    border-radius: 13px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+    color: var(--primery-color);
+    font-size: 18px;
+}
+.footer-text p>span{
+    color: var(--blue);
+}
+
