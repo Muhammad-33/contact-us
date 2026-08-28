@@ -61,7 +61,7 @@ body{
     height: max-content;
     display: flex;
     flex-direction: column;
-    padding:20px  40px;
+    padding:20px;
     border: 1px solid rgba(0, 140, 255, 0.15);
     border-radius: 25px;
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
@@ -126,6 +126,7 @@ body{
     padding:0 0 20px 0;
 }
 .com-info-box{
+    text-decoration: none;
     display: flex;
     gap: 12px;
     padding: 16px;
@@ -141,13 +142,11 @@ body{
     background: rgba(0, 140, 255, 0.04);
     color: var(--primery-color);
 }
-.com-info-box:hover>a{
+.com-info-box:hover>div:first-child{
     background-color: var(--blue);
     color: var(--primery-color);
-    
 }
-.com-info-box a{
-    text-decoration: none;
+.com-info-box div:first-child{
     width: 40px;
     height: 40px;
     display: flex;
